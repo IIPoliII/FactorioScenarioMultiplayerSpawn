@@ -107,14 +107,15 @@ function DisplaySpawnOptions(player)
     AddLabel(sGui, "spawn_msg_lbl1", SPAWN_MSG1, my_label_style)
 
     -- Button and message about the regular vanilla spawn
-    if ENABLE_DEFAULT_SPAWN then
-        sGui.add{name = "default_spawn_btn",
-                    type = "button",
-                    caption={"oarc-vanilla-spawn"}}
-        local normal_spawn_text = {"oarc-default-spawn-behavior"}
-        AddLabel(sGui, "normal_spawn_lbl1", normal_spawn_text, my_label_style)
-        -- AddSpacerLine(sGui, "normal_spawn_spacer")
-    end
+    -- Not supported at this time.
+    -- if ENABLE_DEFAULT_SPAWN then
+    --     sGui.add{name = "default_spawn_btn",
+    --                 type = "button",
+    --                 caption={"oarc-vanilla-spawn"}}
+    --     local normal_spawn_text = {"oarc-default-spawn-behavior"}
+    --     AddLabel(sGui, "normal_spawn_lbl1", normal_spawn_text, my_label_style)
+    --     -- AddSpacerLine(sGui, "normal_spawn_spacer")
+    -- end
 
     -- The main spawning options. Solo near and solo far.
     -- If enable, you can also choose to be on your own team.
